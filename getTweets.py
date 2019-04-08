@@ -70,8 +70,8 @@ def get_old_Data(team):
 	tweets = api.user_timeline(team_data[team]["handle"], max_id=team_data[team]["oldest"]["id"])
 	return tweets
 
-
-INITIALIZATION = False
+##### SET TO 'True' THE FIRST TIME, THEN CHANGE TO FALSE IF YOU WANT TO APPEND TWEET DATA ###############
+INITIALIZATION = True
 
 if INITIALIZATION:
 	team_data = initialize_data()
@@ -79,7 +79,7 @@ else:
 	team_data = load_data()
 
 loopcount = 0
-while loopcount < 3:
+while loopcount < 50:
 	loopcount +=1
 
 	api = tweepy_auth()

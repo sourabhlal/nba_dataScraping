@@ -23,3 +23,10 @@ Acquire data from various sources, structure and consolidate them to build indic
 * `wbmachine.csv` - urls collected from waybackmachine
 * `incomedata.h5` - income and revenue data
 * `incomedata.csv` - duplicate of *incomedata.h5*, included for readibility 
+
+
+### Instructions to run scripts
+* `getTweets.py`
+	* First time set `INITIALIZATION` variable to True, if starting from scratch. If adding more data, set to False.
+	* Create a new file in same directior called `twitterAuth.py`. Within this file add a dict called `twitter_keys`. In this dict store the API keys (`consumer_key`, `consumer_secret`, `access_token`, `access_token_secret`)from your Twitter Dev Account.
+* The other scripts are ready to run. Just make sure to install all dependancies.

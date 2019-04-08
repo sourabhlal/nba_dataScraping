@@ -101,7 +101,7 @@ def extractData(url):
 with open('wbmachine.csv', 'r') as csvFile:
 	reader = csv.reader(csvFile)
 	next(reader)
-	data = [r[0] for r in reader][:1]
+	data = [r[0] for r in reader]
 csvFile.close()
 
 final_data_list = []
